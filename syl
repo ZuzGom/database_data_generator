@@ -1,0 +1,40 @@
+1,Intro to Programming,1,1,https://prog-course.com
+2,Data Structures and Alg,1,1,https://dsa-course.com
+3,Database Mgmt Systems,1,1,https://dbms-course.com
+4,AI Foundations,1,1,https://ai-course.com
+5,Intro to Psychology,2,2,https://psy-course.com
+6,Cognitive Psychology,2,2,https://cog-psych.com
+7,Social Psychology,2,2,https://soc-psych.com
+8,Abnormal Psychology,2,2,https://abn-psych.com
+9,Microeconomics,3,3,https://micro-course.com
+10,Macroeconomics,3,3,https://macro-course.com
+11,International Trade,3,3,https://int-trade.com
+12,Public Finance,3,3,https://pub-finance.com
+13,Calculus I,4,4,https://calculus.com
+14,Linear Algebra,4,4,https://linalg-course.com
+15,Probability & Stats,4,4,https://stats-course.com
+16,Numerical Analysis,4,4,https://num-analysis.com
+17,Shakespearean Lit,5,5,https://shakespeare.com
+18,Modern Amer Lit,5,5,https://mod-amer.com
+19,British Romanticism,5,5,https://brit-rom.com
+20,Postcolonial Lit,5,5,https://post-col.com
+21,Classical Mechanics,6,6,https://classical-mech.com
+22,Quantum Mechanics,6,6,https://quantum-mech.com
+23,Electrodynamics,6,6,https://electro.com
+24,Thermodynamics,6,6,https://thermo.com
+25,Inorganic Chemistry,7,7,https://inorg-chem.com
+26,Organic Chemistry,7,7,https://org-chem.com
+27,Analytical Techniques,7,7,https://analytical.com
+28,Spectroscopy,7,7,https://spectro.com
+29,Machine Learning,1,8,https://ml-course.com
+30,NLP,1,8,https://nlp-course.com
+31,Computer Vision,1,8,https://cv-course.com
+32,Reinforcement Learning,1,8,https://rl-course.com
+33,Psychopathology,2,9,https://psycho-course.com
+34,Counseling Techniques,2,9,https://counsel-course.com
+35,Assessment and Diagnosis,2,9,https://assessment.com
+36,Group Therapy,2,9,https://group-therapy.com
+37,Fin Markets and Inst,3,10,https://fin-markets.com
+38,Corporate Finance,3,10,https://corp-finance.com
+39,Investment Analysis,3,10,https://invest-analysis.com
+40,Intl Finance,3,10,https://intl-finance.com
