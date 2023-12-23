@@ -170,7 +170,43 @@ class DataBase():
             
         f.close()
 
+    def generate_course_attendace(self):
+        f=open('c_at','w')
+        query="select CourseID,StudentID from CourseEnrollment"
+        self.cursor.execute(query)
+        rows=self.cursor.fetchall()
+        for c_id,s_id in rows:
+            query="select EventID from CourseTimetable as ct inner join Modules as m on ct.ModuleID=m.ModuleID where CourseID="+str(c_id)
+            self.cursor.execute(query)
+            
+            for e_id in self.cursor.fetchall():
+                operator=randint(1,10)
+                if operator<9:
+                    f.write("({},{}),\n".format(s_id,e_id[0]))
+        f.close()
+    def generate_study_attendace(self):
+        f=open('s_at','w')
+        query="select StudentID,StudyID from StudyEnrollment"
+        self.cursor.execute(query)
+        rows=self.cursor.fetchall()
+        for s_id,c_id in rows:
+            query="select EventID from StudyTimetable as st inner join StudySubjectCourses as sc on st.CourseID=sc.CourseID where StudyID="+str(c_id)
+            self.cursor.execute(query)
+            
+            for e_id in self.cursor.fetchall():
+                operator=randint(1,10)
+                if operator<9:
+                    f.write("({},{}),\n".format(e_id[0],s_id))
+        query="select * from EventGuest"
+        self.cursor.execute(query)
+        s_id,e_id=self.cursor.fetchone()
+        operator=randint(1,10)
+        if operator<9:
+            f.write("({},{}),\n".format(e_id,s_id))
+        f.close()
 
+
+        
 
 
 
@@ -207,7 +243,7 @@ def check_cal_courses(baza):
 
 baza=DataBase()
 baza.load()
-baza.generate_practise()
+# baza.generate_study_attendace()
 foo=0
 # baza.generate_enroll()
 # baza.load_products()
